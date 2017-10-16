@@ -1,0 +1,40 @@
+﻿body {
+    font-family: 'Annie Use Your Telescope', cursive;
+
+}
+
+p{
+    color: blue;
+    font-family: Arial;
+    font-size: 12px;
+}
+
+.funkyfresh {
+    color: burlywood;
+    font-family: 'Franklin Gothic';
+    font-size: 22px;
+}
+
+#theThird {
+    color: blueviolet;
+    font-family: 'Tangerine', cursive;
+}
+
+h1,h3,h6 {
+    font-family: 'Comic Sans MS';
+    text-decoration: wavy;
+}
+
+ol li {
+    font-size: 15px;
+    font-family: 'Permanent Marker', cursive;
+}
+/*all lists that are ordered*/
+
+ /*
+ how to comment in css
+ lul
+ why do we have so many ways to comment
+ sigh
+ */
+

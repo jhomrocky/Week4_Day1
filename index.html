@@ -2,12 +2,30 @@
 <html>
 <head>
     <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Permanent+Marker|Tangerine" rel="stylesheet">
+    <!-- css goes here-->
+    <link href="Site.css" rel="stylesheet">  <!--can drag from solution explorer on the right-->
+    <!-- internal stylesheet goes here as well-->
+    <!--this would be an internal stylesheet(below), generally for a specific page-->
+    <style>
+        body {
+            background-color: gray;
+        }                               
+        h1 {                            
+            color: blue;
+	        margin-left: 20px;
+        } 
+        img{
+            max-width: 100px;
+        }
+        </style>
+    
 	<meta charset="utf-8" />
 </head>
 <body>
     <!--Viewable on webpage-->
     <h1>Hello World!</h1> <!-- header tags (only go to 6)-->
-    <h2>Hello World!</h2>
+    <h2 style="color: blue; background:black; font-family: Wingdings">This is a blue heading with a black background</h2> <!--inline style-->
     <h3>Hello World!</h3>
     <h4>Hello World!</h4>
     <h5>Hello World!</h5>
@@ -25,15 +43,16 @@
 
     <a href="http://www.wecancodeit.org">Click here!</a>
     <!--href is an attribute, a is "anchor" tag, click here is the innerHTML of the element-->
-
+    <!--single item properties override/supercede general selectors 
+        (eg list item will take presidence over ol properties)-->
     <ol>
-        <li>This is item 1</li>
-        <li>This is item 2</li>
+        <li class="funkyfresh">This is item 1</li> <!--single list item takes class properties-->
+        <li id="theThird">This is item 2</li> <!-- id="" is for using #(id selector), overrides ol/ul/etc properties-->
         <li>This is item 3</li>
     </ol>
 
-    <ul>
-        <li>This is item 1</li>
+    <ul class="funkyfresh">  <!--entire list takes class properties-->
+        <li id="theThird">This is item 1</li>
         <li>This is item 2</li>
         <li>This is item 3</li>
     </ul>
@@ -41,7 +60,7 @@
     
     <table>
         <tr> <!--table row-->
-            <td><!--table data-->
+            <td class="funkyfresh"><!--table data can contain class selectors, tons can-->
                 Some data
             </td>
             <td>
@@ -65,11 +84,11 @@
         <!--link-->
         <!--link-->
     </nav>
-    <footer><h1>This is the footer.</h1></footer>
+    <footer>This is the footer.</footer>
 
     <!--<div> groups things, like a header, a block of text and a picture for example-->
     <!--<form> has many related 'elements' to them, used to create....a form. for user input.-->
-
+    <!--use class to reuse a format(color, font, etc), us ID/# for a single instance-->
 
 
 </body>
